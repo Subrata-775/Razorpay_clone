@@ -6,7 +6,8 @@
     <link href="./main.css" rel="stylesheet" />
     <title>Razorpay</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
+    <!-- NavBar -->
     <nav class="bg-deepBlue">
       <div
         class="relative w-[1100px] mx-auto flex items-center justify-between"
@@ -85,7 +86,11 @@
         <!-- buttons  -->
         <div class="flex items-center space-x-3 ml-5">
           <!-- flag  -->
-          <img src="./Image/india-flag.svg" alt="india-flag" style="margin-left: 10px;" />
+          <img
+            src="./Image/india-flag.svg"
+            alt="india-flag"
+            style="margin-left: 10px"
+          />
 
           <!-- Login Button  -->
           <button
@@ -113,5 +118,41 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero section-->
+    <section class="relative bg-deepBlue">
+      <div
+        class="hero-section w-10/12  max-w-[1080px] flex justify-between flex-row items-center mx-auto "
+      >
+        <div class="hero-para-left-section space-y-8">
+          <h1 class="text-white text-[40px] leading-[1.2] font-bold group font-mullish">
+            Power your finance, grow your business.
+          </h1>
+          <div
+            class="w-6 h-1 bg-greenLight"
+          ></div>
+          <p class="text-white opacity-70 font-mullish text-[18px] leading-7 mt-5">
+            Accept payments from customers.Automate payouts to vendors &
+            employees.Never run out of working capital.
+          </p>
+          <button
+            class="font-mullish items-center bg-lightBlue text-white  rounded-md font-bold  hover:bg-lightBlue500 transition-all duration-200 py-[14px] px-[18px]"
+          >
+            Sign Up Now
+          </button>
+        </div>
+        <div class="hero-img-right-section w-auto cursor-pointer">
+          <img
+            src="./Image/hero-illustration.jpg"
+            class=" w-full max-w-[680px]"
+          />
+        </div>
+      </div>
+      <!-- shape part -->
+      <div class="absolute left-0  right-0 w-[101%] ">
+        <img src="./Image/hero-shape.svg" class="w-full object-fill" >
+      </div>
+    </section>
+    
   </body>
 </html>
