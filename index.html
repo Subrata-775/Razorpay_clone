@@ -10,6 +10,7 @@
 
     <link href="./main.css" rel="stylesheet" />
     <style>
+      
       .core-features-sectionBg {
         background-size: 100% 100%;
         padding-top: 12rem;
@@ -53,123 +54,72 @@
     <div class="wrapper overflow-x-hidden relative w-full">
       <!-- NavBar -->
       <nav class="bg-deepBlue">
-        <div
-          class="relative w-[1100px] mx-auto flex items-center justify-between"
-        >
+        <div class="relative max-w-[1024px] mx-auto flex items-center justify-between px-4">
+          
           <!-- Logo -->
-          <a href="/" class="cursor-pointer py-7 pr-7">
+          <a href="/" class="cursor-pointer py-7">
             <img
               src="./Image/logo.svg"
               alt="logo"
-              width="125px"
-              height="30px"
-              class="sm:ml-10"
+              width="125"
+              height="30"
             />
           </a>
-          <!-- List -->
-          <ul class="flex space-x-7">
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Payments</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Banking+</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Payroll</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Supports</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Engage</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Partners</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Resources</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
-            <li
-              class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group hidden lg:block"
-            >
-              <a href="#">Pricing</a>
-              <div
-                class="absolute bottom-0 bg-lightBlue w-full h-1 hidden group-hover:block transition-all duration-200"
-              ></div>
-            </li>
+      
+          <!-- Desktop Menu -->
+          <ul class=" hidden lg:flex space-x-7 text-white ml ">
+            <li class=" ml-3 font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Payments</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Banking+</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Payroll</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Supports</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Engage</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Partners</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Resources</a></li>
+            <li class=" font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 rel group hidden lg:block nav-item  "><a href="#">Pricing</a></li>
           </ul>
-          <!-- buttons  -->
-          <div class="flex items-center space-x-3 ml-5">
-            <!-- flag  -->
-            <img
-              src="./Image/india-flag.svg"
-              alt="india-flag"
-              style="margin-left: 10px"
-              class="hidden lg:flex"
-            />
-
-            <!-- Login Button  -->
-            <button
-              class="py-3 px-5 border text-white border-lightBlue text-sm font-bold rounded-sm hover:bg-gray-900"
-            >
+      
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex items-center space-x-3">
+            <img src="./Image/india-flag.svg" alt="flag" />
+      
+            <button class="py-3 px-5 border text-white border-lightBlue text-sm font-bold rounded-sm">
               Log in
             </button>
-
-            <!-- Sign Up Button  -->
-            <button
-              class="flex justify-center items-center text-lightBlue300 bg-white text-sm py-3 px-4 rounded-sm font-bold border transition-all duration-200 hover:text-lightBlue500 hidden lg:flex"
-            >
+      
+            <button class="flex items-center text-lightBlue300 bg-white text-sm py-3 px-4 rounded-sm font-bold">
               Sign Up
-              <svg
-                viewBox="0 0 24 24"
-                focusable="false"
-                class="w-[14px] h-[14px] ml-3"
-              >
-                <path
-                  fill="currentColor"
-                  d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                ></path>
-              </svg>
             </button>
           </div>
+      
+          <!-- Hamburger Button -->
+          <button id="menu-btn" class="lg:hidden text-white text-3xl">
+            ☰
+          </button>
+        </div>
+      
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-deepBlue px-6 pb-6">
+          <ul class="flex flex-col space-y-4 text-white">
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Banking+</a></li>
+            <li><a href="#">Payroll</a></li>
+            <li><a href="#">Supports</a></li>
+            <li><a href="#">Engage</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+      
+            <button class="py-3 border border-lightBlue font-bold rounded-sm">
+              Log in
+            </button>
+      
+            <button class="py-3 bg-white text-lightBlue300 font-bold rounded-sm">
+              Sign Up
+            </button>
+          </ul>
         </div>
       </nav>
-
+      
       <!-- Hero section-->
       <section class="relative bg-deepBlue">
         <div
@@ -312,7 +262,7 @@
           >
             <!-- Box1  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200 "
             >
               <!-- Box Icon  -->
               <img
@@ -373,7 +323,7 @@
 
             <!-- Box2  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200"
             >
               <!-- Box Icon  -->
               <img
@@ -434,7 +384,7 @@
 
             <!-- Box3  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200"
             >
               <!-- Box Icon  -->
               <img
@@ -495,7 +445,7 @@
 
             <!-- Box4  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200"
             >
               <!-- Box Icon  -->
               <img
@@ -556,7 +506,7 @@
 
             <!-- Box5  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200"
             >
               <!-- Box Icon  -->
               <img
@@ -617,7 +567,7 @@
 
             <!-- Box6  -->
             <div
-              class="featureCard w-full relative min-h-[15rem] cursor-pointer"
+              class="featureCard w-full relative min-h-[15rem] cursor-pointer hover:scale-105 transition-all duration-200"
             >
               <!-- Box Icon  -->
               <img
@@ -795,9 +745,9 @@
             >
               <!-- Box1  -->
               <div
-                class="featureCard w-full relative min-h-[15rem] cursor-pointer border border-slate-700 rounded-md hover:border-2 transition-all duration-200"
+                class="featureCard w-full relative min-h-[15rem] cursor-pointer border border-slate-700 rounded-md hover:border-2 hover:scale-105 transition-all duration-200"
               >
-                <!-- Box Icon  -->
+              
                 <img
                   src="./Image/payment-modes.svg"
                   class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full transition-all duration-200 featureCardIcon"
@@ -856,7 +806,7 @@
 
               <!-- Box2  -->
               <div
-                class="featureCard w-full relative min-h-[15rem] cursor-pointer border hover:border-3 transition-all duration-200 border-slate-700 rounded-md"
+                class="featureCard w-full relative min-h-[15rem] cursor-pointer border hover:border-3 hover:scale-105 transition-all duration-200 border-slate-700 rounded-md"
               >
                 <!-- Box Icon  -->
                 <img
@@ -917,7 +867,7 @@
 
               <!-- Box3  -->
               <div
-                class="featureCard w-full relative min-h-[15rem] cursor-pointer border hover:border-3 transition-all duration-200 border-slate-700 rounded-md"
+                class="featureCard w-full relative min-h-[15rem] cursor-pointer border hover:border-3 hover:scale-105 transition-all duration-200 border-slate-700 rounded-md"
               >
                 <!-- Box Icon  -->
                 <img
@@ -2083,7 +2033,7 @@
                 </p>
                 <ul class="flex space-x-4 items-center mt-4">
                   <li class="cursor-pointer">
-                    <a>
+                    <a href="#">
                       <img
                         src="/Image/facebook-icon.svg"
                         width="24"
@@ -2093,7 +2043,8 @@
                     </a>
                   </li>
                   <li class="cursor-pointer">
-                    <a>
+                    <a href="https://x.com/SubrataJana7735" target="_blank">
+                      
                       <img
                         src="/Image/twitter-icon.svg"
                         width="24"
@@ -2103,7 +2054,7 @@
                     </a>
                   </li>
                   <li class="cursor-pointer">
-                    <a>
+                    <a href="https://www.instagram.com/itz__me_subrata10" target="_blank">
                       <img
                         src="/Image/instagram-icon.svg"
                         width="24"
@@ -2113,7 +2064,7 @@
                     </a>
                   </li>
                   <li class="cursor-pointer">
-                    <a>
+                    <a href="https://github.com/Subrata-775" target="_blank">
                       <img
                         src="/Image/github-icon.svg"
                         width="24"
@@ -2123,7 +2074,7 @@
                     </a>
                   </li>
                   <li class="cursor-pointer">
-                    <a>
+                    <a href="https://www.linkedin.com/in/subrata-jana-5b442032a/" target="_blank">
                       <img
                         src="/Image/linkedin-icon.svg"
                         width="24"
@@ -2144,7 +2095,7 @@
                   <br />Karnataka, India <br />CIN: U72200KA2013PTC097389
                 </p>
                 <div class="mt-6">
-                  <p class="text-sm">© Razorpay 2022</p>
+                  <p class="text-sm">© Razorpay 2026</p>
                   <p class="text-sm">All Rights Reserved</p>
                 </div>
               </div>
@@ -2154,5 +2105,15 @@
       </footer>
       <!-- Footer Section End -->
     </div>
+ <!-- js -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+    
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    
   </body>
 </html>
