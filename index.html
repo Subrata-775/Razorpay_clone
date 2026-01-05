@@ -15,12 +15,23 @@
         padding-top: 12rem;
         padding-bottom: 12rem;
       }
+      .companiesList {
+        animation: 10s linear infinite moveCompany;
+      }
+      @keyframes moveCompany {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-50%);
+        }
+      }
     </style>
     <title>Razorpay</title>
   </head>
 
   <body>
-    <div class="wrapper overflow-x-hidden relative w-full ">
+    <div class="wrapper overflow-x-hidden relative w-full">
       <!-- NavBar -->
       <nav class="bg-deepBlue">
         <div
@@ -1221,18 +1232,18 @@
       >
         <div class="w-11/12 max-w-[1080px] mx-auto relative pt-4 flex">
           <!-- Left -->
-          <div class="flex flex-col w-[calc(100%-500px)] justify-center">
-            <h2 class="font-extrabold text-deepBlueHead text-2xl">
+          <div class="flex flex-col max-w-[calc(100%-500px)] justify-center">
+            <h2 class="font-bold text-deepBlueHead text-2xl font-mullish">
               Join the 50,00,000+ businesses using Razorpay
             </h2>
             <div class="w-6 border-y-2 border-greenLight mt-4 mb-10"></div>
-            <p class="font-mullish font-bold">
+            <p class="font-mullish opacity-80">
               We make it easier for you to focus on building great products
               while we work on simplifying your payments. Become one of us by
               joining thousands of our happy users and simplify the online
               payment experience for your customers.
             </p>
-            <p class="mt-6 font-mullish">
+            <p class="mt-6 font-mullish opacity-80">
               Focus on your business while we handle the complexities of
               payments for you.
             </p>
@@ -1266,9 +1277,9 @@
             <br />
             People Love to Talk About
           </h2>
-  
+
           <div class="w-6 border-y-2 border-greenLight mx-auto my-4"></div>
-  
+
           <img
             src="./Image/feature-section1-dottedrows.png"
             class="absolute w-[200px] -z-[1] top-[8rem] left-[2rem]"
@@ -1281,12 +1292,11 @@
               class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply"
             >
               <i
-                data-feather="chevron-right"
-                class="stroke-[5px] w-6 h-6 text-gray-400 rotate-180"
+                class="fa-solid fa-angle-right text-gray-400 rotate-180 w-6 h-6"
               ></i>
             </div>
           </button>
-  
+
           <!--right button -->
           <button
             class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 flex justify-center items-center"
@@ -1294,13 +1304,10 @@
             <div
               class="w-[65%] h-[65%] bg-[#f4f8ff] rounded-full flex justify-center items-center mix-blend-multiply"
             >
-              <i
-                data-feather="chevron-right"
-                class="stroke-[5px] w-6 h-6 text-gray-400"
-              ></i>
+              <i class="fa-solid fa-angle-right text-gray-400 w- h-6"></i>
             </div>
           </button>
-  
+
           <!-- Main Content  -->
           <div
             class="flex space-x-[10rem] my-20 max-w-[960px] mx-auto items-center"
@@ -1314,7 +1321,7 @@
                 class="rounded-xl"
               />
             </div>
-  
+
             <!-- Right  -->
             <div class="flex flex-col max-w-[400px] space-y-1 items-start">
               <img
@@ -1322,6 +1329,7 @@
                 width="35px"
                 height="40px"
                 class="-mb-2"
+                loading="lazy"
               />
               <p class="text-3xl font-extralight">
                 Readymade Closed Wallet Solution For Quick Refunds
@@ -1332,7 +1340,7 @@
                 Learn More
               </button>
               <h4 class="font-extrabold text-2xl">Lorem Ipsum</h4>
-              <p class="font-medium">CEO, XYZ Engineering Company</p>
+              <p class="font-medium">CEO, Razorpay Company</p>
               <img
                 src="./Image/fake-company-logo.png"
                 width="80px"
@@ -1341,7 +1349,7 @@
               />
             </div>
           </div>
-  
+
           <!-- 6 Dots  -->
           <div class="w-full flex mx-auto space-x-2 justify-center">
             <div class="w-2 h-2 rounded-full bg-gray-300"></div>
@@ -1354,7 +1362,7 @@
         </div>
       </section>
       <!-- Testmonial Section End  -->
-  
+
       <!-- CTA Section Start  -->
       <section
         class="bg-[url(./Image/CTABg.svg)] bg-center bg-no-repeat bg-cover min-h-[510px] relative w-full h-full ctaSection font-mullish text-white"
@@ -1406,7 +1414,7 @@
               </svg>
             </button>
           </div>
-  
+
           <!-- Right  -->
           <div>
             <img
@@ -1419,7 +1427,7 @@
         </div>
       </section>
       <!-- CTA Section End  -->
-  
+
       <!-- Footer Section Start -->
       <footer
         style="background: linear-gradient(to right, #eef9fe, #edf7ff)"
@@ -1438,10 +1446,11 @@
             />
             <p class="text-sm text-grayText my-3">
               Razorpay is the only payments solution in India that allows
-              businesses to accept, process and disburse payments with its product
-              suite. It gives you access to all payment modes including credit
-              card, debit card, netbanking, UPI and popular wallets including
-              JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.
+              businesses to accept, process and disburse payments with its
+              product suite. It gives you access to all payment modes including
+              credit card, debit card, netbanking, UPI and popular wallets
+              including JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money
+              and PayZapp.
             </p>
             <p class="text-sm text-grayText my-3">
               RazorpayX supercharges your business banking experience, bringing
@@ -1451,17 +1460,17 @@
               automate payroll compliance.
             </p>
             <p class="text-sm text-grayText my-3">
-              Manage your marketplace, automate bank transfers, collect recurring
-              payments, share invoices with customers and avail working capital
-              loans - all from a single platform. Fast forward your business with
-              Razorpay.
+              Manage your marketplace, automate bank transfers, collect
+              recurring payments, share invoices with customers and avail
+              working capital loans - all from a single platform. Fast forward
+              your business with Razorpay.
             </p>
             <p class="text-[0.625rem] text-grayText my-3">
-              Disclaimer: The RazorpayX powered Current Account and VISA corporate
-              credit card are provided by RBI licensed banks. Your RazorpayX
-              powered account is provided by our partner bank, in accordance with
-              RBI regulations. RazorpayX itself is not a bank and doesn't hold or
-              claim to hold a banking license.
+              Disclaimer: The RazorpayX powered Current Account and VISA
+              corporate credit card are provided by RBI licensed banks. Your
+              RazorpayX powered account is provided by our partner bank, in
+              accordance with RBI regulations. RazorpayX itself is not a bank
+              and doesn't hold or claim to hold a banking license.
             </p>
             <p class="uppercase font-bold text-gray2">
               Subscribe to our newsletter
@@ -1713,7 +1722,9 @@
             <!-- sub column - 2 -->
             <div class="space-y-3">
               <div>
-                <p class="uppercase font-bold text-gray2 mb-1">ACCEPT PAYMENTS</p>
+                <p class="uppercase font-bold text-gray2 mb-1">
+                  ACCEPT PAYMENTS
+                </p>
                 <ul class="space-y-2">
                   <li>
                     <a
@@ -2073,7 +2084,6 @@
         </div>
       </footer>
       <!-- Footer Section End -->
-  
     </div>
   </body>
 </html>
